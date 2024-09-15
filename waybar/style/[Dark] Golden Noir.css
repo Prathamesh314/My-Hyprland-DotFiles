@@ -1,0 +1,127 @@
+/* Global Styles */
+
+* {
+    font-family: "JetBrains Mono Nerd Font";
+    font-weight: bold;
+    font-size: 12px;
+  }
+  
+  window#waybar {
+    background: #0F0F17;
+    border: 1px solid #A1BDCE;
+    border-radius: 10px;
+  }
+  
+  /* Modules */
+  
+  .modules-right,
+  .modules-center,
+  .modules-left {
+    padding: 2px;
+  }
+  
+  .modules-center {
+    border-left: 1px solid #ffd700;
+    border-right: 1px solid #ffd700;
+  }
+  
+  /* Workspaces */
+  
+  #workspaces {
+    background: rgba(23, 23, 23, 0.0);
+    color: #888789;
+    box-shadow: none;
+    text-shadow: none;
+    border-radius: 9px;
+    transition: 0.2s ease;
+    padding: 0 4px;
+  }
+  
+  #workspaces button {
+    background: rgba(23, 23, 23, 0.0);
+    color: #A1BDCE;
+    box-shadow: none;
+    text-shadow: none;
+    border-radius: 9px;
+    transition: 0.2s ease;
+    padding: 0 4px;
+  }
+  
+  #workspaces button.active {
+    color: #A1BDCE;
+    transition: all 0.3s ease;
+    padding: 0 4px;
+  }
+  
+  #workspaces button:hover {
+    background: none;
+    color: #72D792;
+    transition: all 0.5s cubic-bezier(.55, -0.68, .48, 1.682);
+  }
+  
+  /* Taskbar */
+  
+  #taskbar {
+    padding: 0px;
+  }
+  
+  #taskbar button {
+    box-shadow: none;
+    text-shadow: none;
+    font-size: 4px;
+    padding: 2px;
+    border-radius: 9px;
+    margin-bottom: 3px;
+    margin-left: 0px;
+    padding-left: 3px;
+    padding-right: 3px;
+    margin-right: 0px;
+    color: #A1BDCE;
+  }
+  
+  #taskbar button.active {
+    background: #0F0F17;
+    color: #A1BDCE;
+    margin-left: 3px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-right: 3px;
+    transition: all 0.4s cubic-bezier(.55, -0.68, .48, 1.682);
+    min-height: 9px;
+  }
+  
+  #taskbar button:hover {
+    background: #0F0F17;
+    color: #72D792;
+    transition: all 0.3s cubic-bezier(.55, -0.68, .48, 1.682);
+  }
+  
+  /* Other Modules */
+  
+  #clock {
+    color: #A1BDCE;
+    font-size: 12px;
+    font-weight: 900;
+    font-family: "JetBrains Mono Nerd Font";
+    background: rgba(23, 23, 23, 0.0);
+    opacity: 1;
+    margin: 3px 0px 0px 0px;
+    padding: 0 10px;
+    border: none;
+  }
+  
+  #battery {
+    font-weight: normal;
+    font-size: 12px;
+    color: #a6d189;
+    background: rgba(23, 23, 23, 0.0);
+    opacity: 1;
+    margin: 0px;
+    padding: 0;
+  }
+  
+  #battery.critical:not(.charging) {
+    color: red;
+  }
+  
+  /* End */
